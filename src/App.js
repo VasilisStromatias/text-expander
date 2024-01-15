@@ -4,7 +4,7 @@ import TextExpander from "./components/TextExpander";
 function App() {
   return (
     <>
-      <TextExpander wordsToCollapse={100}>
+      <TextExpander wordsToCollapse={25}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
         pharetra leo at enim viverra finibus. Donec orci sapien, ornare vel
         tempor vitae, ullamcorper eu purus. Etiam semper tincidunt augue at
@@ -17,7 +17,12 @@ function App() {
         hendrerit elementum. Sed at tincidunt urna, et mollis ipsum.
         Pellentesque eu pellentesque nulla.
       </TextExpander>
-      <TextExpander expandText="Show text" buttonColor="orange">
+      <TextExpander
+        expandText="Show text"
+        collapseText="Hide text"
+        buttonColor="orange"
+        wordsToCollapse={10}
+      >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
         pharetra leo at enim viverra finibus. Donec orci sapien, ornare vel
         tempor vitae, ullamcorper eu purus. Etiam semper tincidunt augue at
@@ -30,7 +35,11 @@ function App() {
         hendrerit elementum. Sed at tincidunt urna, et mollis ipsum.
         Pellentesque eu pellentesque nulla.
       </TextExpander>
-      <TextExpander containerClass="test-class">
+      <TextExpander
+        containerClass="box"
+        initialOpen={true}
+        wordsToCollapse={10}
+      >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
         pharetra leo at enim viverra finibus. Donec orci sapien, ornare vel
         tempor vitae, ullamcorper eu purus. Etiam semper tincidunt augue at
